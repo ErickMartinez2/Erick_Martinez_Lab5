@@ -25,4 +25,25 @@ public class Baleada_Bounds extends Baleada {
         ingrediente.add("Chorizo");
         precio = 85;
     }
+
+    public ArrayList<String> getIngrediente() {
+        return ingrediente;
+    }
+
+    public void setIngrediente(ArrayList<String> ingrediente) {
+        this.ingrediente = ingrediente;
+    }
+
+    public double getPrecio() {
+        return precio;
+    }
+
+    public void setPrecio(double precio) {
+        this.precio = precio;
+    }
+    
+    @Override
+    public String toString() {
+        return "Baleada Out of Bounds";
+    }
 }

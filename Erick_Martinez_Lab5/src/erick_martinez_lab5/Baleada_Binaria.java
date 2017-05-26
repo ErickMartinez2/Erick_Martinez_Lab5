@@ -23,4 +23,25 @@ public class Baleada_Binaria extends Baleada {
         precio = 22;
     }
 
+    public ArrayList<String> getIngrediente() {
+        return ingrediente;
+    }
+
+    public void setIngrediente(ArrayList<String> ingrediente) {
+        this.ingrediente = ingrediente;
+    }
+
+    public double getPrecio() {
+        return precio;
+    }
+
+    public void setPrecio(double precio) {
+        this.precio = precio;
+    }
+
+    @Override
+    public String toString() {
+        return "Baleada Binaria";
+    }
+    
 }
