@@ -14,14 +14,14 @@ import java.util.ArrayList;
 public class Cliente {
     public String nombre;
     public String numero;
-    public double dinero;
+    public int dinero;
     public String direccion;
     public ArrayList<Baleada> baleada = new ArrayList();
 
     public Cliente() {
     }
 
-    public Cliente(String nombre, String numero, double dinero, String direccion) {
+    public Cliente(String nombre, String numero, int dinero, String direccion) {
         this.nombre = nombre;
         this.numero = numero;
         this.dinero = dinero;
@@ -44,11 +44,11 @@ public class Cliente {
         this.numero = numero;
     }
 
-    public double getDinero() {
+    public int getDinero() {
         return dinero;
     }
 
-    public void setDinero(double dinero) {
+    public void setDinero(int dinero) {
         this.dinero = dinero;
     }
 
@@ -66,6 +66,11 @@ public class Cliente {
 
     public void setBaleada(ArrayList<Baleada> baleada) {
         this.baleada = baleada;
+    }
+
+    @Override
+    public String toString() {
+        return nombre;
     }
     
 }
