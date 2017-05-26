@@ -17,4 +17,55 @@ public class Cliente {
     public double dinero;
     public String direccion;
     public ArrayList<Baleada> baleada = new ArrayList();
+
+    public Cliente() {
+    }
+
+    public Cliente(String nombre, String numero, double dinero, String direccion) {
+        this.nombre = nombre;
+        this.numero = numero;
+        this.dinero = dinero;
+        this.direccion = direccion;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getNumero() {
+        return numero;
+    }
+
+    public void setNumero(String numero) {
+        this.numero = numero;
+    }
+
+    public double getDinero() {
+        return dinero;
+    }
+
+    public void setDinero(double dinero) {
+        this.dinero = dinero;
+    }
+
+    public String getDireccion() {
+        return direccion;
+    }
+
+    public void setDireccion(String direccion) {
+        this.direccion = direccion;
+    }
+
+    public ArrayList<Baleada> getBaleada() {
+        return baleada;
+    }
+
+    public void setBaleada(ArrayList<Baleada> baleada) {
+        this.baleada = baleada;
+    }
+    
 }

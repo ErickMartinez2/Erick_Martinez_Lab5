@@ -5,13 +5,13 @@
  */
 package erick_martinez_lab5;
 
-import java.util.ArrayList;
-
 /**
  *
  * @author usuario
  */
 public class Baleada {
-    public ArrayList<String> ingrediente = new ArrayList();
+
+    public Baleada() {
+    }
     
 }
